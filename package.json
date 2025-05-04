@@ -13,7 +13,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "commit": "cz"
+    "commit": "git add . && cz"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [

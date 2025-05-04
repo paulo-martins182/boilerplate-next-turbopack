@@ -53,14 +53,6 @@ Execute o Prettier:
 pnpm format
 ```
 
-Inicie o Storybook:
-
-```bash
-pnpm storybook
-```
-
-Rodar os testes:
-
 ## 🧪 Testes
 
 ```bash
@@ -79,6 +71,7 @@ pnpm commit
 
 ## 📁 Estrutura de pastas
 
+```bash
 src/
 ├── app/            # Páginas com App Router
 ├── components/  
@@ -88,6 +81,7 @@ src/
 ├── hooks/          # Custom hooks
 ├── styles/         # Estilos globais
 ├── schemas/        # Schemas Zod para validação
+```
 
 ---
 
@@ -109,43 +103,43 @@ Certifique-se de ativar o Actions no seu repositório após subir ao GitHub.
 
 ```
 
-![CI](https://github.com/SEU_USUARIO/SEU_REPOSITORIO/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/paulo-martins182/boilerplate-next-turbopack/actions/workflows/ci.yml/badge.svg)
 
 ---
 
 ## ✅ Features implementadas
 
-[x] - App Router com layout padrão
+- [x] - App Router com layout padrão
 
-[x] - Tailwind com tema customizável
+- [x] - Tailwind com tema customizável
 
-[x] - Integração com ShadCN UI
+- [x] - Integração com ShadCN UI
 
-[x] - Formulário com React Hook Form + Zod
+- [x] - Formulário com React Hook Form + Zod
 
-[x] - Storybook com suporte a temas
+- [x] - Storybook com suporte a temas
 
-[x] - Padronização com ESLint, Prettier e Commitlint
+- [x] - Padronização com ESLint, Prettier e Commitlint
 
-[x] - Lucide Icons
+- [x] - Lucide Icons
 
-[x] - Testes com Jest e RTL
+- [x] - Testes com Jest e RTL
 
-[x] - Automação com GitHub Actions
+- [x] - Automação com GitHub Actions
 
 ---
 
 ## 🧭 Futuras Features (em planejamento)
 
-[x] - Integração com CMS (Strapi / Sanity)
+- [x] - Integração com CMS (Strapi / Sanity)
 
-[x] - Suporte a temas dinâmicos (dark/light)
+- [x] - Suporte a temas dinâmicos (dark/light)
 
-[x] - Criação de CLI para geração de componentes
+- [x] - Criação de CLI para geração de componentes
 
-[x] - Adição de Vitest (opcional ao Jest)
+- [x] - Adição de Vitest (opcional ao Jest)
 
-[x] - PWA + Lighthouse otimizado
+- [x] - PWA + Lighthouse otimizado
 
 ---
 
