@@ -1,36 +1,185 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🚀 Next.js Boilerplate – Modern Frontend Setup
 
-First, run the development server:
+Boilerplate profissional baseado em **Next.js 15 App Router**, configurado com ferramentas modernas e padrões utilizados por grandes empresas para acelerar a criação de aplicações frontend escaláveis, tipadas e com design consistente.
+
+---
+
+## 🔧 Tecnologias e Ferramentas
+
+- Next.js 15 (App Router)
+- TypeScript
+- Tailwind CSS
+- Shadcn UI
+- Lucide Icons
+- React Hook Form + Zod
+- ESLint + Prettier
+- Husky + Commitlint + Commitizen
+- Storybook
+- Jest + React Testing Library
+- GitHub Actions
+
+---
+
+## 📦 Como rodar o projeto
+
+Instale as dependências:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Inicie o servidor local:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Gere a build de produção:
 
-## Learn More
+```bash
+pnpm build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Verifique o lint:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Execute o Prettier:
 
-## Deploy on Vercel
+```bash
+pnpm format
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Inicie o Storybook:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm storybook
+```
+
+Rodar os testes:
+
+## 🧪 Testes
+
+```bash
+pnpm test
+```
+
+## 🔐 Commits padronizados
+
+Realizar commit padronizado:
+
+```bash
+pnpm commit
+```
+
+---
+
+## 📁 Estrutura de pastas
+
+src/
+├── app/            # Páginas com App Router
+├── components/  
+│   ├── ui/         # Componentes reutilizáveis (Shadcn UI)
+│   └── stories/    # Componentes com Storybook
+├── lib/            # Funções auxiliares e helpers
+├── hooks/          # Custom hooks
+├── styles/         # Estilos globais
+├── schemas/        # Schemas Zod para validação
+
+---
+
+## ⚙️ GitHub Actions CI/CD
+
+Este boilerplate já está integrado ao GitHub Actions para:
+
+Rodar lint e testes a cada push
+
+Validar commits
+
+Verificar build de produção
+
+Certifique-se de ativar o Actions no seu repositório após subir ao GitHub.
+
+```bash
+
+# .github/workflows/ci.yml (exemplo incluso no repositório)
+
+```
+
+![CI](https://github.com/SEU_USUARIO/SEU_REPOSITORIO/actions/workflows/ci.yml/badge.svg)
+
+---
+
+## ✅ Features implementadas
+
+[x] - App Router com layout padrão
+
+[x] - Tailwind com tema customizável
+
+[x] - Integração com ShadCN UI
+
+[x] - Formulário com React Hook Form + Zod
+
+[x] - Storybook com suporte a temas
+
+[x] - Padronização com ESLint, Prettier e Commitlint
+
+[x] - Lucide Icons
+
+[x] - Testes com Jest e RTL
+
+[x] - Automação com GitHub Actions
+
+---
+
+## 🧭 Futuras Features (em planejamento)
+
+[x] - Integração com CMS (Strapi / Sanity)
+
+[x] - Suporte a temas dinâmicos (dark/light)
+
+[x] - Criação de CLI para geração de componentes
+
+[x] - Adição de Vitest (opcional ao Jest)
+
+[x] - PWA + Lighthouse otimizado
+
+---
+
+## 🧠 Como contribuir?
+
+Fork este repositório
+
+Crie uma branch com sua feature: git checkout -b feat/nova-feature
+
+Commit com padrão: pnpm commit
+
+Push: git push origin feat/nova-feature
+
+Abra um PR ✨
+
+## 🖖 Licença
+
+MIT © Paulo Martin
+
+### 🧠 Dica Extra: Automação para atualização no GitHub
+
+Crie um script simples no `package.json` para facilitar o push:
+
+```json
+"scripts": {
+  "push": "git add . && git commit && git push"
+}
+```
+
+Ou, mais completo com cz:
+
+```json
+"scripts": {
+  "commit": "cz",
+  "push": "git add . && pnpm commit && git push"
+}
+```
