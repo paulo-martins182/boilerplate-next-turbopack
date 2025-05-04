@@ -131,15 +131,15 @@ Certifique-se de ativar o Actions no seu repositório após subir ao GitHub.
 
 ## 🧭 Futuras Features (em planejamento)
 
-- [x] - Integração com CMS (Strapi / Sanity)
+- [ ] - Integração com CMS (Strapi / Sanity)
 
-- [x] - Suporte a temas dinâmicos (dark/light)
+- [ ] - Suporte a temas dinâmicos (dark/light)
 
-- [x] - Criação de CLI para geração de componentes
+- [ ] - Criação de CLI para geração de componentes com Plop
 
-- [x] - Adição de Vitest (opcional ao Jest)
+- [ ] - Adição de Jest
 
-- [x] - PWA + Lighthouse otimizado
+- [ ] - PWA + Lighthouse otimizado
 
 ---
 
